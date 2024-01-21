@@ -2,4 +2,7 @@ sudo apt-get update
 sudo apt install dnf
 sudo apt install vim
 useradd -m -d /home/ansible -s /bin/bash -G sudo ansible
-ssh ansible@kubeadm-master.lab.local
+sudo apt install openssh-server
+sudo systemctl status ssh
+sudo ufw allow ssh
+ssh username@ip_address
